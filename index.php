@@ -1,9 +1,25 @@
 <?php
-  session_start()
-  ?>
-
-<?php
+  session_start();
+  
   include("database.php");
+
+  if(isset($_POST["login"])){
+
+    $username = $_POST['username'];
+    $password = $_POST['password'];
+
+    $sql = "select * from users where username = '$username' and password = '$password'";
+    $result = mysqli_query($conn, $sql);
+    $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
+    $count = mysqli_num_rows($result);
+
+    if($count == 1){
+        header("Location: home.php");
+    }
+    else {
+      echo "Incorrect username or password";
+    }
+  }
 ?>
 <head>
   <meta charset="UTF-8">
@@ -24,40 +40,4 @@
       <a href="./signup.php"> Sign up </a>
     </form>
 </body>
-
-</html>
-
-<?php
-
-  function login_alert() {
-    echo"<script>alert('Invalid credentials')</script>";
-  }
-    if(isset($_POST["login"])){
-
-
-      if($_POST["username"] == "Evan" && $_POST["password"] == "Lavoie"){
-        $_SESSION["username"] = "Evan Lavoie";
-        header("location: home.php");
-      } else
-      if($_POST["username"] == "Markos" && $_POST["password"] == "Magaoay"){
-        $_SESSION["username"] = "Markos Magaoay";
-        header("location: home.php");
-      } else
-      if($_POST["username"] == "Joaquin" && $_POST["password"] == "Juanico"){
-        $_SESSION["username"] = "Joaquin Juanico";
-        header("location: home.php");
-      } else
-      {
-        login_alert();
-      }
-    }
-    ?>
-
-    
-
-
-
-
-
-
-  
+</html>   
