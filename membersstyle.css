@@ -1,0 +1,76 @@
+body {
+    background-image: url("background.png");
+  }
+
+  nav {
+    background-color: lightblue;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 28px;   
+  }
+
+  nav a {
+    margin: 0 20px;
+  }
+
+  nav a:hover {
+    color: white;
+  }
+
+  h1 {
+    text-align: center;
+    
+    font-size: 50px;
+    
+    text-shadow:
+      -1px -1px 0 white,
+      0 -1px 0 white,
+      1px -1px 0 white,
+      1px 0 0 white,
+      1px 1px 0 white,
+      0 1px 0 white,
+      -1px 1px 0 white,
+      -1px 0 0 white;
+    
+  }
+
+  ul {
+    font-size: 40px;
+    
+    text-align: center;
+    list-style: none;
+    
+    padding: 0;
+    
+    text-shadow:
+      -1px -1px 0 white,
+      0 -1px 0 white,
+      1px -1px 0 white,
+      1px 0 0 white,
+      1px 1px 0 white,
+      0 1px 0 white,
+      -1px 1px 0 white,
+      -1px 0 0 white;
+    
+  }
+
+  li {
+    margin-bottom: 10px;
+    
+  }
+
+  .groupnames {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+  }
+
+  .grouppics {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    height: 1px;
+  }
+
+  img {
+    border-radius: 50px;
+  }

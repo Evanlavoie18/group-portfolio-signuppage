@@ -1,0 +1,49 @@
+body {
+    background-image: url("background.png");
+  }
+
+  nav {
+    background-color: lightblue;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 28px;
+    margin-top: 42px;
+  }
+
+  nav a {
+    margin: 0 20px;
+  }
+
+  nav a:hover {
+    color: white;
+  }
+
+  h1,
+  p {
+    text-align: center;
+    font-size: 50px;
+    text-shadow:
+    -1px -1px 0 white,
+    0 -1px 0 white,
+    1px -1px 0 white,
+    1px 0 0 white,
+    1px 1px 0 white,
+    0 1px 0 white,
+    -1px 1px 0 white,
+    -1px 0 0 white;
+  }
+
+  li {
+    margin-left: 300px;
+    font-size: 30px;
+    text-shadow:
+      -1px -1px 0 white,
+      0 -1px 0 white,
+      1px -1px 0 white,
+      1px 0 0 white,
+      1px 1px 0 white,
+      0 1px 0 white,
+      -1px 1px 0 white,
+      -1px 0 0 white;
+  }

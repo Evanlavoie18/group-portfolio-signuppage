@@ -1,0 +1,68 @@
+body {
+    background-image: url("evanbackground.png");
+}
+
+.introduction {
+   background-color: rgba(153, 90, 255, 0.87);
+   padding: 40px;
+   text-align: center;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   font-size: 25px;
+   border-radius: 25px;
+  border: 3px solid rgba(255, 255, 255, 0.678);
+}
+
+h2 {
+    text-align: center;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   font-size: 40px;
+}
+
+.eduattain {
+    background-color: rgba(153, 90, 255, 0.87);
+   padding: 20px;
+   width: 1500px;
+   font-size: 25px;
+   margin: auto;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border-radius: 25px;
+  border: 3px solid rgba(255, 255, 255, 0.678);
+}
+
+.seminar {
+    background-color: rgba(153, 90, 255, 0.87);
+   padding: 20px;
+   width: 1500px;
+   font-size: 25px;
+   margin: auto;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border-radius: 25px;
+  border: 3px solid rgba(255, 255, 255, 0.678);
+}
+
+.future {
+    background-color: rgba(153, 90, 255, 0.87);
+   padding: 20px;
+   width: 1500px;
+   font-size: 25px;
+   margin: auto;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border-radius: 25px;
+  border: 3px solid rgba(255, 255, 255, 0.678);
+}
+
+.hobbies {
+    background-color: rgba(153, 90, 255, 0.87);
+   padding: 20px;
+   width: 1500px;
+   font-size: 25px;
+   margin: auto;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    list-style-type: none;
+    border-radius: 25px;
+  border: 3px solid rgba(255, 255, 255, 0.678);
+}

@@ -1,0 +1,60 @@
+body {
+    background-image: url("background.png");
+  }
+
+  nav {
+    background-color: lightblue;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 28px;
+  }
+
+  nav a:hover {
+    color: white;
+  }
+
+  nav a {
+    margin: 0 20px;
+    
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 50px;
+    text-shadow:
+      -1px -1px 0 white,
+      0 -1px 0 white,
+      1px -1px 0 white,
+      1px 0 0 white,
+      1px 1px 0 white,
+      0 1px 0 white,
+      -1px 1px 0 white,
+      -1px 0 0 white;
+    /* white outline on text */
+  }
+
+  .img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    border-radius: 75px;
+  }
+
+  .portbutton {
+      font-family: Arial, sans-serif;
+      height: 35px;
+      width: 120px;
+      margin-top: 10px;
+      font-size: 27px;
+      font-weight: bold;
+      color: #571a8b;
+      background-color: rgba(255, 255, 255, 0);
+      border-color: rgba(255, 255, 255, 0);
+      text-decoration: underline;
+    }
+
+    .portbutton:hover {
+      color: white;
+    }
