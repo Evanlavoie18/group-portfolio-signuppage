@@ -31,14 +31,20 @@
 
 <?php
     if(isset($_POST["portfolio"])){
-      if($_SESSION["username"] == "Evan Lavoie"){
+      if($_SESSION['$username'] == "Evan"){
         header("Location: evanportfolio.html");
       }
-      if($_SESSION["username"] == "Markos Magaoay"){
+      if($_SESSION['$username'] == "Markos"){
         header("Location: markosportfolio.html");
       }
-      if($_SESSION["username"] == "Joaquin Juanico"){
+      if($_SESSION['$username'] == "Joaquin"){
         header("Location: joaquinportfolio.html");
+      }
+      else {
+        echo '<script> 
+          window.location.href = "home.php";
+          alert("Only moderators have acces")
+        </script>';
       }
     }
 ?>
