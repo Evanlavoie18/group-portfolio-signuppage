@@ -16,7 +16,7 @@
       <h2>Sign up</h2>
       <div class="username">
       <label for="username">Username:</label>
-      <input type="text" id="username" name="Username" required>
+      <input type="text" id="username" name="username" required>
     </div>
     <div class="password">
       <label for="password">Password:</label>
@@ -47,13 +47,24 @@
   if($_SERVER["REQUEST_METHOD"] == "POST"){
 
     $username = filter_input(INPUT_POST, "username", FILTER_SANITIZE_SPECIAL_CHARS);
-    $password = filter_input(INPUT_POST, "username", FILTER_SANITIZE_SPECIAL_CHARS);
+    $password = filter_input(INPUT_POST, "password", FILTER_SANITIZE_SPECIAL_CHARS);
   
     if(empty($username)){ 
       echo"Please enter a username";
     }
     elseif(empty($password)){
       echo"Please enter a password";
+    }
+    else{
+      $sql = "INSERT INTO users (username, password)
+              VALUES ('$username', '$password')";
+      try{
+        mysqli_query($conn, $sql);
+        echo"You are now registered";
+      }
+      catch(mysqli_sql_exception){
+        echo"that username is taken";
+      }
     }
   }
 
