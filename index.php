@@ -14,6 +14,7 @@
     $count = mysqli_num_rows($result);
 
     if($count == 1){
+        $_SESSION['$username'] =$_POST['username'];
         header("Location: home.php");
     }
     else {
@@ -40,4 +41,4 @@
       <a href="./signup.php"> Sign up </a>
     </form>
 </body>
-</html>   
+</html>
